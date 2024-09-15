@@ -34,10 +34,39 @@
                 color: black;
                 font-weight: bold;
                 padding: 10px 15px;
-               
+            }
+            nav ul li a:hover{
+                background-color: black;
+                color:white
+            }
+            section{
+                display: flex;
+            }
+            .lsidebar{
+                width: 20%;
+                height: 350px;
+                background-color: chartreuse;
+            }
+            .rsidebar{
+                width: 20%;
+                height: 350px;
+                background-color: chartreuse;
+            }
+            article{
+                width: 60%;
+                height: 350px;
+                background-color:chocolate;
+            }
+            footer{
+                text-align: center;
+                background-color: crimson;
+                color:white
+            }
+            footer p{
+                padding: 5px 10px;
             }
         </style>
- </head>
+    </head>
     <body>
         <main>
             <header>
@@ -52,6 +81,14 @@
                     <li> <a href="#"> Contact </a></li>
                 </ul>
             </nav>
+            <section>
+                <aside class="lsidebar"> Left Sidebar</aside>
+                <article> Container </article>
+                <aside class="rsidebar"> Right Sidebar</aside>
+            </section>
+            <footer>
+                <p> Copyright &copy; 2024. All right reserved.</p>
+            </footer>
         </main>
     </body>
 </html>

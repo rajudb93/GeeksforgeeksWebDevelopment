@@ -1,0 +1,86 @@
+-> Session 2 
+  Getting started with CSS 
+    -> Stylesheet : are used for look and feel of the design.
+      -> types of Stylesheet 
+        1. inline : we can call in any tag with the help of style attribute 
+           eg:
+             <p style="color:'green'> ---- </p>
+        2. internal 
+           We define styles in a head section in style tag 
+           eg:
+           <head>
+              <style>
+                 h1 {color:'red'}
+                 p {text-align:'center'}
+              </style>
+           </head>
+        3. external (css) : cascading style sheet. we create a seperate css file and define the styles and call that file in any of the web page in head section with the help of link tag.
+          eg:
+             style.css 
+               h1 {} 
+               p{} 
+            home.html 
+            <html>
+               <head>
+                  <link rel="stylesheet" href="./style.css" /> 
+               </head>
+               <body>
+                 ---
+               </body>
+            </html>
+        -> syntax :
+           selector{
+              property:value
+           }
+           eg:
+           h1{
+              color:'green'
+           }
+        -> Types of selector 
+           -> element selector 
+              h1 { }
+              p{ }
+           -> universal selector (*)
+             *{
+
+             }
+            -> id selector : when we want to define a unique style . It is define with hash sign with id name and call in any tag with id attribute 
+              eg:
+              #header{
+                //styles 
+              }
+              <div id="header">
+              </div>
+            -> class selector : call in multiple elements. It is define with dot(.)sign with class name and call in any tag with class attribute 
+             eg:
+              .error{
+                color:'red'
+              }
+              <p class="error"> --- </p>
+            -> group selector 
+               h1 , h2, h3 {
+                 text-align:'center'
+               }
+            -> Box-model properties 
+              -> width 
+              -> height 
+              -> margin : outside the border 
+                 margin : top right bottom left;
+                    margin : 10px 20px 0px 40px;
+                    margin-top:30px;
+                    margin:5px;
+                    margin:10px 15px; (10 : t b) (15 : r l)
+              -> padding : inside the border 
+                  padding : 10px 20px 0px 40px;
+                    padding-top:30px;
+                    padding:5px;
+                    padding:10px 15px; (10 : t b) (15 : r l)
+            -> Flexbox : with the help of it we can seprate block label elements in one row.
+               -> when we use it we put display:flex property in the parent element so all child are in one line 
+                  eg:
+                    <div style="display:flex">
+                       <div> First </div>
+                       <div> Second </div>
+                    </div>
+-> Download and install git 
+https://git-scm.com/download/win
